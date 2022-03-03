@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="static/css/style.css">
+
+</head>
+<body>
+    
+    <h1>Home Page</h1>
+    <img src="static/image/nature.jpg" alt="">
+    <h2>Template Engine </h2>
+
+    <!-- Displaying Variable Data -->
+    <%= name %>
+
+    <!-- Creating Variable -->
+    <% var i = 10;  %>
+
+    <!-- Displaying Variable Data -->
+    <%= i %>
+
+    <!-- EJS Comment -->
+    <%# Comment will not be present in the rendered HTML %>
+
+    <!-- if -->
+    <% if(name!=="Guest") { %>
+        <h2> I am <%= name %> from <%= city %> </h2>
+    <% } else { %>
+        <h2> Hello Guest </h2>
+    <% } %>
+
+    <!-- loop -->
+    <% for(let i=1; i<=10; i++) { %>
+       <span> <%= i*2 %></span>
+    <% } %>
+
+
+</body>
+</html>

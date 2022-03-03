@@ -1,0 +1,29 @@
+<%- include("./partials/header") %> <%- include("./partials/navbar") %>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-5 p-3 ms-5">
+      <h1 class="py-4 text-center">Login</h1>
+      <form method="POST">
+        <div class="mb-2 pb-2">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" name="email" id="email" />
+        </div>
+        <div class="mb-3 pb-1">
+          <label for="password">Password</label>
+          <input type="password" class="form-control" name="password" id="password" />
+        </div>
+        <div class="mb-2">
+          <button class="btn btn-primary" type="submit">Submit</button>
+        </div>
+      </form>
+      <% if (message) { %>
+        <div class="alert alert-danger">
+          <%= message %>
+        </div>
+      <% } %>
+    </div>
+  </div>
+</div>
+
+<%- include("./partials/footer") %>

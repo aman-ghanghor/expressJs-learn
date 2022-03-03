@@ -1,0 +1,13 @@
+<section class="col-sm-2 h-100">
+    <div class="d-flex flex-column justify-content-center align-items-center py-3">
+       <img src="static/image/girl.jpg" class="img-fluid mb-2 avatar">
+       <h3 class="text-white opacity-25">Sonam Kashyap</h3>
+    </div>
+    <nav class="nav nav-pills text-center flex-column w-100">
+      <a href="/" class="nav-link <% if(page_name=='home'){%> <%= 'active' %> <% } %>">Home</a>
+      <a href="/services" class="nav-link <% if(page_name=='services'){%> <%= 'active' %> <% } %>">Services</a>
+      <a href="/skill" class="nav-link <% if(page_name=='skill'){%> <%= 'active' %> <% } %> ">Skill</a>
+      <a href="/contact" class="nav-link <% if(page_name=='contact'){%> <%= 'active' %> <% } %> ">Contact</a>
+    </nav>
+</section>
+

@@ -1,0 +1,19 @@
+{
+  "name": "05-routing",
+  "version": "1.0.0",
+  "description": "* Routing refers to determine how an application responds to a client request to a particular endpoint, which is a URI (or path) and a specific HTTP request method (GET, POST, and so on).",
+  "main": "index.js",
+  "scripts": {
+    "dev" : "nodemon app"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "express": "^5.0.0-alpha.8"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
